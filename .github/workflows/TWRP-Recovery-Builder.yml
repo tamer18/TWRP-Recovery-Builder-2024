@@ -24,15 +24,15 @@ on:
       DEVICE_PATH:
         description: 'Specify your Device Path' 
         required: true
-        default: 'device/nokia/cap_sprout'
+        default: 'device/xiaomi/fleur'
       DEVICE_NAME:
         description: 'Specify your Device Codename' 
         required: true
-        default: 'cap_sprout'
+        default: 'fleur'
       BUILD_TARGET:
         description: 'Specify your Build Target' 
         required: true
-        default: 'recovery'
+        default: 'boot'
         type: choice
         options:
         - boot
@@ -41,7 +41,7 @@ on:
       LDCHECK:
         description: 'Path of blobs to check' 
         required: true
-        default: 'system/bin/qseecomd'
+        default: 'system/bin/teei_daemon'
       RECOVERY_TAR:
         description: 'Release recovery.tar For Samsung devices'
         required: false
